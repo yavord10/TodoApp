@@ -1,2 +1,2 @@
 # TodoApp
-Create Todo List
+App to create a list of Todos
