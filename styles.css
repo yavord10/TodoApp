@@ -1,0 +1,121 @@
+header {
+    display: flex;
+    background: rgb(255, 255, 255);
+    font-family: 'Corben', Arial, Helvetica, sans-serif;
+    margin-bottom: 35px;
+}
+
+header > * {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-family: 'Corben',Arial, Helvetica, sans-serif;
+
+}
+
+.buttonContainer {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0px;
+}
+
+
+.deleteButton {
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.changeButton {
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.toggleButton {
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+#positionNum {
+    width: auto;
+}
+
+#togglePos {
+    width: auto;
+}
+section {
+    border: solid;
+    margin: 20px 10px 0px 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    box-shadow: rgb(163, 163, 163) 0px 0px 3px;
+}
+
+section .todoheading {
+    text-align: center;
+    font-family: 'Corben',Arial, Helvetica, sans-serif;
+}
+
+.btn:hover {
+    box-shadow: black 0px 0px 3px;
+}
+
+.btn {
+    font-family: 'Corben',Arial, Helvetica, sans-serif;
+}
+
+input {
+    border-radius: 15px;
+}
+
+.todoheading {
+    margin-bottom: 5px;
+}
+
+section ul {
+    font-family: 'Corben',Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul > * {
+    padding: 10px 0px 10px 0px;
+}
+
+ul li {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+ul li:hover {
+    background: rgb(207, 206, 206); 
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(253, 253, 253);
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    top: 15px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 17px;
+    width: 11px;
+}
+
